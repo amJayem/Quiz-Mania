@@ -8,6 +8,9 @@ const Home = () => {
     // console.log(data[0]);
     return (
         <div>
+            <h1 className='text-4xl font-semibold mb-20'>
+                Choose a topic to test your skill
+            </h1>
             {
                 data.map(quizItem => <QuizItem
                     key={quizItem.id}
