@@ -31,7 +31,11 @@ function App() {
         {
           path: 'blog',
           element: <Blog></Blog>
-        }
+        },
+        {
+          path: '*',
+          element: <div>Erorr!! this path is made for you... *_*  </div>
+        },
       ]
     }
   ]);
