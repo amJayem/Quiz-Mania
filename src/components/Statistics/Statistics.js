@@ -6,8 +6,8 @@ const Statistics = () => {
   const data = useLoaderData().data;
 //   console.log(data);
     const renderLineChart = (
-        <LineChart
-            width={400}
+        <LineChart 
+            width={375}
             height={300}
             data={data}
             margin={{ top: 5, right: 20, bottom: 5, left: 0 }}

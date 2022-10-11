@@ -29,8 +29,6 @@ const Blog = () => {
                    to "prop drilling" or moving props from grandparent to child 
                    to parent, and so on.
                 </li>
-                <li className='list-decimal font-medium bg-green-200 p-3 
-                rounded-md m-3'></li>
               </li>
             <li className='bg-blue-300 font-bold text-xl p-2 rounded-md'>
               Short description about useRef hook.

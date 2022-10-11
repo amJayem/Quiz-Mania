@@ -1,0 +1,22 @@
+/*
+bg-blue-500
+sm:bg-red-500
+md:bg-yellow-500 md:items-center md:justify-between
+lg:bg-green-500 lg:items-center lg:justify-between
+*/
+
+@media only screen and (min-width: 300px) and (max-width: 699px){
+    .nav{
+        background-color: skyblue;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .nav{
+        background-color: goldenrod;
+        display: flex;
+        justify-content: space-between;
+    }
+}
