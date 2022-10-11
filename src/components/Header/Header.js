@@ -12,6 +12,7 @@ const Header = () => {
             <div>
                 <NavLink className='font-bold mr-2' to='/'>Home</NavLink>            
                 <NavLink className='font-bold mr-2' to='/quiz'>Quiz</NavLink>
+                <NavLink className='font-bold mr-2' to='/statistics'>Show Statistics</NavLink>
             </div>
         </nav>
     );
