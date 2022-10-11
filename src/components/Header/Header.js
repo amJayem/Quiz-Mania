@@ -16,7 +16,7 @@ const Header = () => {
             </div>
             <div className=' '>
                 <NavLink className='font-bold mr-2' to='/'>Home</NavLink>            
-                <NavLink className='font-bold mr-2' to='/quiz'>Quiz</NavLink>
+                <NavLink className='font-bold mr-2' to='/quiz/1'>Quiz</NavLink>
                 <NavLink className='font-bold mr-2' to='/statistics'>Show Statistics</NavLink>
                 <NavLink className='font-bold mr-2' to='/blog'>Blog</NavLink>
             </div>
