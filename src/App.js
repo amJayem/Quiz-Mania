@@ -16,8 +16,9 @@ function App() {
           loader: (()=> fetch('https://openapi.programming-hero.com/api/quiz'))
         },
         {
-          path: 'quiz',
-          element: <Quiz></Quiz>
+          path: 'quiz/:quizId',
+          element: <Quiz></Quiz>,
+          loader: async({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
         }
       ]
     }

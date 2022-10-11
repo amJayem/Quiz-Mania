@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './QuizList.css';
 
 const QuizItem = ({quizItem}) => {
-    const {name,logo,total} = quizItem;
+    const {id,name,logo,total} = quizItem;
     // console.log(quizItem.id == 5 ? logo:'null');
     return (
         <div className=''>
@@ -13,7 +13,7 @@ const QuizItem = ({quizItem}) => {
             bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500
             text-white'>
                 {/* <img src={quizItem.id == 5 ? logo:'null'} alt="" /> */}
-                <Link>
+                <Link to={`quiz/${id}`}>
                     <h3>{name}</h3>
                     <img className='h-26' src={logo} alt="" />
                     <p>Total quiz: <small>{total}</small></p>
