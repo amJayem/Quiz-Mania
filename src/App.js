@@ -4,6 +4,7 @@ import Main from './layout/Main';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
+import Blog from './components/Blog/Blog';
 
 function App() {
   const url = 'https://openapi.programming-hero.com/api/quiz';
@@ -26,6 +27,10 @@ function App() {
           path: 'statistics',
           element: <Statistics></Statistics>,
           loader: (()=> fetch(url))
+        },
+        {
+          path: 'blog',
+          element: <Blog></Blog>
         }
       ]
     }
