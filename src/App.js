@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
+import Erorr404 from './components/Erorr404/Erorr404';
 
 function App() {
   const url = 'https://openapi.programming-hero.com/api/quiz';
@@ -34,7 +35,7 @@ function App() {
         },
         {
           path: '*',
-          element: <div>Erorr!! this path is made for you... *_*  </div>
+          element: <Erorr404></Erorr404>
         },
       ]
     }
