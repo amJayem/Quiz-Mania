@@ -1,4 +1,4 @@
-import { faFaceTired } from '@fortawesome/free-solid-svg-icons';
+import {  faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
@@ -14,16 +14,21 @@ const QuestionAndOptions = ({qstn}) => {
         else {
             toast.warn('Wrong Answer!!');
         }
+    };
+
+    const handlerShowCorrectAns = () =>{
+        toast.success(`Correct Answer: ${correctAnswer}`);
     }
 
     return (
         <div className='bg-blue-200 m-10 p-5 border-none rounded-md'>
-            <div className='flex justify-between items-center'>
-                <h1 className='grow h-14 text-2xl font-semibold'>{question}</h1>
+            <div className='flex justify-between items-center '>
+                <h1 className='grow h-14 text-xl font-semibold P-2'>{question}</h1>
                 {/* <p>Answer: {correctAnswer}</p> */}
                 <FontAwesomeIcon 
                 className='cursor-pointer'
-                icon={faFaceTired}></FontAwesomeIcon>
+                onClick={handlerShowCorrectAns}
+                icon={faEye}></FontAwesomeIcon>
             </div>
             {
                 options.map(option=> 
@@ -36,15 +41,6 @@ const QuestionAndOptions = ({qstn}) => {
                                 onClick={()=> handlerCheckAnswer(option)}
                             >{option}</li>
                             <ToastContainer
-                                position="top-right"
-                                autoClose={5000}
-                                hideProgressBar={false}
-                                newestOnTop={false}
-                                closeOnClick
-                                rtl={false}
-                                pauseOnFocusLoss
-                                draggable
-                                pauseOnHover
                                 theme="dark"
                             />
                         </ul>
