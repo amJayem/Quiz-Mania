@@ -16,7 +16,7 @@ const QuizItem = ({quizItem}) => {
                     <h3>{name}</h3>
                     <img className='h-26 p-3' src={logo} alt="" />
                     <p>Total quiz: <small>{total}</small></p>
-                <Link to={`quiz/${id}`}>
+                <Link to={`/quiz/${id}`}>
                     <button className='
                     bg-gradient-to-r from-red-200 to-green-200 text-black 
                     hover:bg-from-cyan-500 hover:to-blue-500
