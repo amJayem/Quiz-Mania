@@ -15,20 +15,20 @@ const QuestionAndOptions = ({qstn}) => {
         }
     };
     const handlerShowCorrectAns = () =>{
-        toast.success(`Correct Answer: ${correctAnswer}`);
+        toast.info(`Correct Answer is: ${correctAnswer}`);
     };
 
     return (
         <div className='bg-blue-200 m-11
                         lg:mx-64 lg:my-16 
                         p-5 border-none rounded-md'>
-            <div className='flex justify-between items-center '>
-                <h1 className='grow text-xl font-semibold P-2'>{question}</h1>
-                {/* <p>Answer: {correctAnswer}</p> */}
+            <div className=' '>
                 <FontAwesomeIcon 
-                className='cursor-pointer'
+                className='flex cursor-pointer'
                 onClick={handlerShowCorrectAns}
                 icon={faEye}></FontAwesomeIcon>
+                <h1 className='text-xl font-semibold P-2'>{question}</h1>
+                {/* <p>Answer: {correctAnswer}</p> */}
             </div>
             <div className='mt-5'>{
                 options.map(option=> 
