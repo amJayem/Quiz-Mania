@@ -11,7 +11,7 @@ function App() {
   const url = 'https://openapi.programming-hero.com/api/quiz';
   const router = createBrowserRouter([
     {
-      path: '',
+      path: '/',
       element: <Main></Main>,
       children: [
         {

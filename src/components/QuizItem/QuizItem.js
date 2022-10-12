@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './QuizList.css';
 
 const QuizItem = ({quizItem}) => {
     const {id,name,logo,total} = quizItem;
