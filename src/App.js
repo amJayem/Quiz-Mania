@@ -15,7 +15,7 @@ function App() {
       element: <Main></Main>,
       children: [
         {
-          path: '/',
+          path: '/home',
           element: <Home></Home>,
           loader: (()=> fetch(url))
         },
