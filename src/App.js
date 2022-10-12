@@ -6,6 +6,7 @@ import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import Erorr404 from './components/Erorr404/Erorr404';
+import Vaya from './components/Vaya';
 
 function App() {
   const url = 'https://openapi.programming-hero.com/api/quiz';
@@ -14,6 +15,11 @@ function App() {
       path: '/',
       element: <Main></Main>,
       children: [
+        {
+          path: '/',
+          element: <Vaya></Vaya>,
+          loader: (()=> fetch(url))
+        },
         {
           path: '/home',
           element: <Home></Home>,
