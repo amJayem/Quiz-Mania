@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const QuestionAndOptions = ({qstn}) => {
     const {question,correctAnswer,options} = qstn;
-
     const handlerCheckAnswer=(ans)=>{
         if(ans === correctAnswer){
             toast.success("Correct Answer");
@@ -15,10 +14,9 @@ const QuestionAndOptions = ({qstn}) => {
             toast.warn('Wrong Answer!!');
         }
     };
-
     const handlerShowCorrectAns = () =>{
         toast.success(`Correct Answer: ${correctAnswer}`);
-    }
+    };
 
     return (
         <div className='bg-blue-200 m-11
@@ -35,9 +33,7 @@ const QuestionAndOptions = ({qstn}) => {
             <div className='mt-5'>{
                 options.map(option=> 
                 <div className='bg-blue-300 rounded-lg m-1 hover:bg-blue-50'>
-                    <div className='
-                        text-left md:w-full w-64 p-3 border-solid
-                    '>
+                    <div className='text-left md:w-full p-3 border-solid'>
                         <ul>
                             <li className='font-semibold cursor-pointer text-center'
                                 onClick={()=> handlerCheckAnswer(option)}

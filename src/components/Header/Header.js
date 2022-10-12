@@ -10,8 +10,8 @@ import './Header.css';
 const Header = () => {
     return (
         <nav className=' nav mb-10 p-5 '>
-            <div>
-                <Link to='/home' className='font-bold text-2xl text-black'>
+            <div className='header'>
+                <Link to='/home' className=' font-bold text-2xl text-black'>
                     Quiz Mania
                 </Link>
             </div>
